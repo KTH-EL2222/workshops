@@ -1,6 +1,6 @@
 ## Final Assignment
 
-In the final assignment you have to completely build you robot, by follow steps below. In order to facilitate your work we have created a [code skeleton](https://github.com/KTH-EL2222/code/archive/master.zip) with a motor class that you have to populate with methods. The code skeleton also includes communication protocol that is going to be used in the second workshop. For further information about code skeleton can be found here.
+In the final assignment you have to completely build you robot, by follow steps below. In order to facilitate your work we have created a [code skeleton](https://github.com/KTH-EL2222/code/archive/master.zip) with a motor class that you have to populate with methods. The code skeleton also includes communication protocol that is going to be used in the second workshop. For further information about code skeleton can be found [here](code.html).
 
 1. Assemble robot
   1. Mechanics
