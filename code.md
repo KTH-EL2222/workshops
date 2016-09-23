@@ -17,9 +17,9 @@ It includes skeleton for implemnting PID and Communication Protocol between Ardu
 Rpi Arduino Communication
 readSerialCmd() and 'raspberryCom.ino' are needed to establish communication between Rpi and Arduino. We will look into it later. 
 
-####Workshop 2:
+#####Workshop 2:
 
-####Rpi
+#####Rpi
 This folder includes sample code for raspberry Pi to communicate with Arduino with Arduino connected to raspberry Pi with USB. 
 
 'pi_main.py' is the main python which includes declarations and main. An object to Arduino class(defined in 'arduinoCom.py') is created and method to connect to Arduino is called. 
