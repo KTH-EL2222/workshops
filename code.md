@@ -31,6 +31,6 @@ Communication protocol:
  There is a initial Handshake to check communication and later Rpi sends information to set linear and angular velocities, Arduino returns the set values.  The below image shows the same.
 
 <center>
-<img src="workshop1/Communication_Arduino_Rpi.JPG" alt="Communication" width="200"/>
+<img src="workshop1/Communication_Arduino_Rpi.JPG" alt="Communication" width="500"/>
 </center>
 
