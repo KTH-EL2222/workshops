@@ -5,6 +5,7 @@
 * PWM = Pulse-width modulation
 
 ## Objective
+
 In this lab you will be familiarized with the hardware and techniques that are going to be used to control robots motion. You will learn how to power up motors and read encoder signal within an Arduino.
 
 For this lab you will need following equipment:
@@ -195,7 +196,7 @@ Verify that the estimation of angular speed is correct by mnaually measuring the
 5. Move the robot with certain velocity, say 0.2m/s by implementing PID control.
 6. Move Robot in a circle of 1m diameter, apply PID to control speeds of both wheels to achieve this. 
 
-#### Workshop 2 Introduction
+# Workshop 2 Introduction
 ## Objective
 The objective of this workshop is to get familiarized with basic image processing and high-level logic control. 
 ##Tentative Task
