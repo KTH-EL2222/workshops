@@ -6,6 +6,6 @@
    * [Assignment 1](assignment_1.md)
    * [Assignment 2](assignment_2.md)
    * [Assignment 3](assignment_3.md)
-   * Final Assignment
+   * [Final Assignment](final_assignment.md)
 * [Code](code.md)
 
