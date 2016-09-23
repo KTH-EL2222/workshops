@@ -1,4 +1,4 @@
-#### Final Assignment
+## Final Assignment
 1. Assemble robot
   1. Mechanics
     * Solder wires to the motors.
