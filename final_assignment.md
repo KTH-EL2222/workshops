@@ -1,4 +1,6 @@
 ## Final Assignment
+
+In the final assignment you have to completely build you robot, by follow steps below. 
 1. Assemble robot
   1. Mechanics
     * Solder wires to the motors.
@@ -9,7 +11,7 @@
     * Solder wires to the voltage regulator.
     * Make sure that Voltage regulator output 5V while attached to 12V supply. You can check voltage with a multimeter.
     * Connect all parts as shown on the figure below.
-2. Make both motors rotate
+2. Make both wheels rotate
 3. Read encoders for both motors
 4. Code skeleton for implementing PID is available [here](https://github.com/KTH-EL2222/code/archive/master.zip). Further details of code are    
    in comments and Readme of the repository. 
