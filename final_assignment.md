@@ -1,6 +1,7 @@
 ## Final Assignment
 
-In the final assignment you have to completely build you robot, by follow steps below. 
+In the final assignment you have to completely build you robot, by follow steps below. In order to facilitate your work we have created a [code skeleton](https://github.com/KTH-EL2222/code/archive/master.zip) with a motor class that you have to populate with methods. The code skeleton also includes communication protocol that is going to be used in the second workshop. For further information about code skeleton can be found here.
+
 1. Assemble robot
   1. Mechanics
     * Solder wires to the motors.
@@ -13,8 +14,7 @@ In the final assignment you have to completely build you robot, by follow steps 
     * Connect all parts as shown on the figure below.
 2. Make both wheels rotate
 3. Read encoders for both motors
-4. Code skeleton for implementing PID is available [here](https://github.com/KTH-EL2222/code/archive/master.zip). Further details of code are    
-   in comments and Readme of the repository. 
+4. Code skeleton for implementing PID is available [here](https://github.com/KTH-EL2222/code/archive/master.zip). Further details of code are in comments and Readme of the repository. 
 5. Move the robot with certain velocity, say 0.2m/s by implementing PID control.
 6. Move Robot in a circle of 1m diameter, apply PID to control speeds of both wheels to achieve this. 
 
