@@ -15,3 +15,6 @@ It includes skeleton for implemnting PID and Communication Protocol between Ardu
 Communication between 
 readSerialCmd() and 'raspberryCom.ino' establishes 
 
+
+Hej hejj
+
