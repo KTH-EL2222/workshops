@@ -86,7 +86,7 @@ Lets try rotate motor using the L293D circuit, voltage regulator and one of the 
   * Attach encoder wheel and hall effect sensor the same way as in image bellow. Make sure that all wires are attached to motor with cable ties.
 
 <center>
-<img src="workshop1/connections.jpg" alt="one_motor" width="300"/>
+<img src="workshop1/connections.jpg" alt="motor_connections" width="300"/>
 </center>
 
 
@@ -185,7 +185,7 @@ Verify that the estimation of angular speed is correct by mnaually measuring the
     * Connect all parts as shown on the following figure.
 
 <center>
-<img src="workshop1/pwm.png" alt="schematics" width="300"/>
+<img src="workshop1/breadbord_schematics.png" alt="two_motors" width="300"/>
 </center>
 
 2. Make both motors rotate
