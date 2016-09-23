@@ -15,7 +15,7 @@ The current encoder wheel and sensor configuration gives 4 pulses for one rotati
 
 The below code outputs* encoder counter value periodically, use this to verify how many pulses are generated per rotation of wheel(rotate motor with hand).
 *The values are output as serial data and more information about arduino serial communication can be found [here](https://www.arduino.cc/en/Reference/Serial) and [here](https://www.arduino.cc/en/Tutorial/SoftwareSerialExample).
-In arduino GUI, Tools->Serial Monitor to view the data on Serial Bus.
+In arduino GUI Tools->Serial Monitor to view the data on Serial Bus.
 
 ```cpp
 const byte encoderPin = 3;
