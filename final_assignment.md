@@ -20,3 +20,4 @@
 <img src="workshop1/breadbord_schematics.png" alt="two_motors" width="300"/>
 </center>
 
+If you are not familiar with differential drive kinematics read (this)[https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf].
