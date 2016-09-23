@@ -29,7 +29,9 @@ In this assignment we will make an LED blink. Put the components as shown in the
 ## Pulse-width modulation (PWM)
 Pulse Width Modulation (PWM) is a method for generating a replacement for continuously variable analogue signal using a digital source that can only vary the output between two values, off/low and on/high.  A PWM signal is controlled by two parameters; the duty cycle and the switching frequency.  The duty cycle describes the amount of time the signal is in a high (on) state as a percentage of the total cycle time (period).  In figure below we can see that the signal is on 25% of the cycle time.  The switching frequency determines how fast the PWM completes a cycle (i.e.  1000 Hz would be 1000 cycles per second), and therefore how fast it switches between high and low states.  By cycling the digital signal off and on at a fast enough rate, and with a certain duty cycle, the output will appear to behave like a constant voltage analog signal with a value anywhere between the low and the high level when providing power to devices.
 
-![](https://github.com/KTH-EL2222/workshops/blob/master/workshop1/pwm.png)
+<center>
+<img src="workshop1/pwm.png" alt="schematics" width="300"/>
+</center>
 
 As an example, to create a 3V signal given a digital source of 5V that can be either high (on) or low (off) at 0V, you can use PWM with a duty cycle of 60% which outputs 5V 60% of the time.  If the digital signal is cycled fast enough, then the voltage seen at the output appears to be the average voltage.  If the digital low is 0V (which is usually the case) then the average voltage can be calculated by taking the digital high voltage multiplied by the duty cycle, or 5V x 0.6 = 3V. Selecting a duty cycle of 80% would yield 4V, 20% would yield 1V, and so on.
 
@@ -72,7 +74,9 @@ To power the motors we are using an integrated circuit (ic) called L293D. Each s
 
 By controlling signals on pins 2 and 7 it is possible to control spinning direction of the motor. Furthermore, pwm signal on enable pin can be used to control the rotational speed of the motor. The higher the duty cycle, the higher rotational speed of the motor. For further information about L293D check the datasheat following [this link](http://users.ece.utexas.edu/~valvano/Datasheets/L293D_ST.pdf).
 
-![L293D]( https://github.com/KTH-EL2222/workshops/blob/master/workshop1/L293D.jpg )
+<center>
+<img src="workshop1/L293D.jpg" alt="L293D" width="300"/>
+</center>
 
 ## Assignment 2: Rotate a motor
 Lets try rotate motor using the L293D circuit, voltage regulator and one of the motors. Perform following steps to assemble the circuit:
@@ -81,10 +85,18 @@ Lets try rotate motor using the L293D circuit, voltage regulator and one of the 
   * Solder two wires to each terminal of the motor, one yellow and one green. It does not matter which color goes to which terminal as long as both motors have same color on same side.    
   * Attach encoder wheel and hall effect sensor the same way as in image bellow. Make sure that all wires are attached to motor with cable ties.
 
-![](https://github.com/KTH-EL2222/workshops/blob/master/workshop1/connections.jpg)
+<center>
+<img src="workshop1/connections.jpg" alt="one_motor" width="300"/>
+</center>
+
+
 * Make sure that voltage regulator outputs 5v with an input of 12V from the AC/DC adapter. Check the voltage with a multimeter and adjust output volatge by turning knob on voltage regulator with a screwdriver.
 * Attach all components to the breadboard as on the schematic below.
-![](https://github.com/KTH-EL2222/workshops/blob/master/workshop1/breadbord_schematics_one_motor.png)
+
+<center>
+<img src="workshop1/breadbord_schematics_one_motor.png" alt="one_motor" width="300"/>
+</center>
+
 * Attach a power cable to the bottom row of the breadboard.
 
 In this configuration the bottom row of the breadboard marked with blue and red lines have output of 12V while the most upper two rows have output voltage of 5V. The 5V power is needed to power up raspberry pi, encoders and Arduino, while 12V is used to power up motors.
@@ -171,7 +183,11 @@ Verify that the estimation of angular speed is correct by mnaually measuring the
     * Solder wires to the voltage regulator.
     * Make sure that Voltage regulator output 5V while attached to 12V supply. You can check voltage with a multimeter.
     * Connect all parts as shown on the following figure.
-    ![](https://github.com/KTH-EL2222/workshops/blob/master/workshop1/breadbord_schematics.png)
+
+<center>
+<img src="workshop1/pwm.png" alt="schematics" width="300"/>
+</center>
+
 2. Make both motors rotate
 3. Read encoders for both motors
 4. Code skeleton for implementing PID is available [here](https://github.com/KTH-EL2222/code). Further details of code are    
