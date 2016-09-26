@@ -32,7 +32,7 @@ Lets try rotate motor using the L293D circuit, voltage regulator and one of the 
 * Attach all components to the breadboard as on the schematic below.
 
 <center>
-<img src="workshop1/breadbord_schematics_one_motor.png" alt="one_motor" width="300"/>
+<img src="workshop1/breadbord_schematics_one_motor.png" alt="one_motor" width="500"/>
 </center>
 
 * Attach a power cable to the bottom row of the breadboard.
