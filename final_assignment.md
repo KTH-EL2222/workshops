@@ -19,7 +19,7 @@ In the final assignment you have to completely build your robot, by follow the s
 6. Move Robot in a circle of 1m diameter, apply PID to control speeds of both wheels to achieve this. 
 
 <center>
-<img src="workshop1/breadbord_schematics.png" alt="two_motors" width="300"/>
+<img src="workshop1/breadbord_schematics.png" alt="two_motors" width="500"/>
 </center>
 
 If you are not familiar with differential drive kinematics read [this](https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf).
