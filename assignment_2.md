@@ -29,13 +29,14 @@ Lets try rotate motor using the L293D circuit, voltage regulator and one of the 
 
 
 * Make sure that voltage regulator outputs 5v with an input of 12V from the AC/DC adapter. Check the voltage with a multimeter and adjust output volatge by turning knob on voltage regulator with a screwdriver.
+* Attach single strand wire to the end of power cable provided and insulate them.(This will be easier to connect to breadboard) 
+* Attach a power cable to the bottom row of the breadboard.
 * Attach all components to the breadboard as on the schematic below.
 
 <center>
 <img src="workshop1/breadbord_schematics_one_motor.png" alt="one_motor" width="500"/>
 </center>
-* Attach single strand wire to the end of power cable provided and insulate them.(This will be easier to connect to breadboard) 
-* Attach a power cable to the bottom row of the breadboard.
+
 
 In this configuration the bottom row of the breadboard marked with blue and red lines have output of 12V while the most upper two rows have output voltage of 5V. The 5V power is needed to power up raspberry pi, encoders and Arduino, while 12V is used to power up motors.
 
