@@ -20,7 +20,7 @@ By controlling signals on pins 2 and 7 it is possible to control spinning direct
 Lets try rotate motor using the L293D circuit, voltage regulator and one of the motors. Perform following steps to assemble the circuit:
 
 * Do for both motors:
-  * Solder two wires to each terminal of the motor, one black and one red. It does not matter which color goes to which terminal as long as both motors have same color on same side.    
+  * Solder two wires to each terminal of the motor, one black and one red. It does not matter which color goes to which terminal as long as both motors have same color on same side. Wires can be found at the soldering station.
   * Attach encoder wheel and hall effect sensor the same way as in image bellow. Make sure that all wires are attached to motor with cable ties. That prevents damaging of the motor terminals if you accidentally pull one of the cables.
 
 <center>
@@ -29,13 +29,14 @@ Lets try rotate motor using the L293D circuit, voltage regulator and one of the 
 
 
 * Make sure that voltage regulator outputs 5v with an input of 12V from the AC/DC adapter. Check the voltage with a multimeter and adjust output volatge by turning knob on voltage regulator with a screwdriver.
+* Attach single strand wire to the end of power cable provided and insulate them.(This will be easier to connect to breadboard) 
+* Attach a power cable to the bottom row of the breadboard.
 * Attach all components to the breadboard as on the schematic below.
 
 <center>
 <img src="workshop1/breadbord_schematics_one_motor.png" alt="one_motor" width="500"/>
 </center>
-* Attach single strand wire to the end of power cable provided and insulate them.(This will be easier to connect to breadboard) 
-* Attach a power cable to the bottom row of the breadboard.
+
 
 In this configuration the bottom row of the breadboard marked with blue and red lines have output of 12V while the most upper two rows have output voltage of 5V. The 5V power is needed to power up raspberry pi, encoders and Arduino, while 12V is used to power up motors.
 
