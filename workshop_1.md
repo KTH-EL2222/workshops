@@ -6,7 +6,7 @@
 
 ## Objective
 
-In this lab you will be familiarized with the hardware and techniques that are going to be used to control robots motion. You will learn how to power up motors and read encoder signal within an Arduino.
+In this workshop you will be familiarized with the hardware and techniques that are going to be used to control robots motion. You will learn how to power up motors and read encoder signal within an Arduino.
 
 For this lab you will need following equipment:
 * [Arduino UNO](https://www.arduino.cc/en/Main/ArduinoBoardUno)
