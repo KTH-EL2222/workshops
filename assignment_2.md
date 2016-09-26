@@ -20,7 +20,7 @@ By controlling signals on pins 2 and 7 it is possible to control spinning direct
 Lets try rotate motor using the L293D circuit, voltage regulator and one of the motors. Perform following steps to assemble the circuit:
 
 * Do for both motors:
-  * Solder two wires to each terminal of the motor, one black and one red. It does not matter which color goes to which terminal as long as both motors have same color on same side.    
+  * Solder two wires to each terminal of the motor, one black and one red. It does not matter which color goes to which terminal as long as both motors have same color on same side. Wires can be found at the soldering station.
   * Attach encoder wheel and hall effect sensor the same way as in image bellow. Make sure that all wires are attached to motor with cable ties. That prevents damaging of the motor terminals if you accidentally pull one of the cables.
 
 <center>
