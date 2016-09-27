@@ -8,7 +8,7 @@ To power the motors we are using an integrated circuit (ic) called L293D. Each s
 | High  | High  | Hight | Stop             |
 | High  | Low   | Low   | Stop             |
 | Low   | x     | x     | Stop             |
-\* The direction of the motor depends how you connect it to the output pins.
+\*The direction of the motor depends how you connect it to the output pins.
 
 By controlling signals on pins 2 and 7 it is possible to control spinning direction of the motor. Furthermore, PWM signal on enable pin can be used to control the rotational speed of the motor. The higher the duty cycle, the higher rotational speed of the motor. For further information about L293D check the datasheat following [this link](http://users.ece.utexas.edu/~valvano/Datasheets/L293D_ST.pdf).
 
