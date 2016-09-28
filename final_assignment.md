@@ -22,4 +22,9 @@ In the final assignment you have to completely build your robot, by follow the s
 <img src="workshop1/breadbord_schematics.png" alt="two_motors" width="500"/>
 </center>
 
-If you are not familiar with differential drive kinematics read [this](https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf).
+If you are not familiar with differential drive kinematics read [this](https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf). Furthermore, relation between velocities of the robot and velocities of the wheels as follows:
+
+$$ \omega = \frac{V_r-V_l}{L} $$, $$v = \frac{V_r+V_l}{2}$$
+where $$V_l$$ and $$V_r$$ are the velocities of the left and right wheels, $$\omega$$ angular velocity, and $$v$$ linear velocity of the robot. 
+
+For the workshop 2 your robot supposed to act on commands of linear and angular velocities received from raspberry pi.
