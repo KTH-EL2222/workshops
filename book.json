@@ -4,3 +4,6 @@
     ],
     "pluginsConfig": {}
 }
+{
+    "plugins": ["mathjax"]
+}
