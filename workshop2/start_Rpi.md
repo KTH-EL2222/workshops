@@ -10,12 +10,17 @@ To work on Raspberry Pi you will need:
 
 Before powering up the Raspberry Pi, put it into a RPi case and attach a RPi camera. Insert a MicroSD card with preinstalled Raspbian operating system. Insert mouse and keyboard into the USB ports, and connect screen with an HDMI cable. You are now ready to plug in the power source in the Micro-USB slot of the RPi.
 
-![RPi camera connection](/home/vladimir/Downloads/connect-camera.jpg)
+![RPi camera connection](figures/connect-camera.jpg)
 
 User name for the RPi is "pi" and the password is "raspberry".
 
+When the RPi is on, configure network by clicking on WIFI icon on top right corner. The local network that you can use is called `EL2222` with password `dbdeadbeef`. After connecting to the network check your ip-address by opening terminal (screen icon on the top left corner) and type `ifconfig`. The ip-address of your raspberry pi will be listed as `inet addr` under the `wlan0` interface.
+
+To remotely access raspberry pi from your computer you can use [SSH](https://en.wikipedia.org/wiki/Secure_Shell) or [VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing). SHH will give you access to the command line interface on the remote machine, while you can use graphical interface via VNC. For a tutorial on how to configure remote access on windows follow this link.
+<!-- TODO: add a link -->
+
 ## Introduction to Linux
-Let's start introducing the shell to you. Shell is a command line interface in Linux based operation systems program. Shell takes your commands from the keyboard and gives them to the operating system to perform.  A terminal emulator allows you to interact with the shell. What you need to interact with the shell is a screen and a keyboard, you will enter text and you will see the text displayed. You can do all sorts of things from the terminal, e.g. you can copy, create or delete files and folders. In the table below you will find the commands you will commonly use. You can find more information about the shell and other commands following this  [link](http://linuxcommand.org/learning_the_shell.php). Now let's try using these commands.
+Let's start introducing the shell to you. Shell is a command line interface in Linux based operation systems. Shell takes your commands from the keyboard and gives them to the operating system to perform.  A terminal emulator allows you to interact with the shell. What you need to interact with the shell is a screen and a keyboard, you will enter text and you will see the text displayed. You can do all sorts of things from the terminal, e.g. you can copy, create or delete files and folders. In the table below you will find the commands you will commonly use. You can find more information about the shell and other commands following this  [link](http://linuxcommand.org/learning_the_shell.php). Now let's try using these commands.
 
 
 <!-- Table with commands -->
@@ -34,7 +39,7 @@ Let's start introducing the shell to you. Shell is a command line interface in L
 | ctrl+c||Kills the current program running|
 | cmd | --help | Show what options/arguments are available for command cmd|
 
-Open terminal by clicking on the terminal logo ![](figures/terminal_logo.png) in top-left corner.
+Open terminal by clicking on the terminal logo ![](figures/terminal_logo.png) in top-left corner. You can also use bash by accessing RPi with SSH.
 
 In the opened terminal type `pwd` and press enter, this command gives you the present working directory which should be `/home/pi`.
 
@@ -46,10 +51,10 @@ To navigate up one directory you type in `cd ..`. If you want to go directly to 
 
 Let's run a python game. change directory to `python_games` and run `python <GAME>` where `<GAME>` is one of the files with an .py extenssion.
 
-<!-- TODO: Check if needed
-The sudo command is used to run commands that need root privileges to run, we need to use this when we run programs that use the GPIOs. -->
 
-<!-- The apt-get command is used to install packages from online sources, the packages we will be using in these workshops should already be installed but if any new are needed this is the command used. This is also used for updating, you can type in sudo apt-get update to update the system and the packages. -->
+The `sudo` (superuser do) command is used to run commands that need root privileges to run.
+
+The `apt-get` command is used to install packages from online sources, the packages we will be using in these workshops should already be installed but if any new are needed this is the command used. This is also used for updating, you can type in `sudo apt-get update` to update the system and the packages.
 
 ## Useful tips: 
 * The up arrow key goes through the previous commands you have entered in the shell, similarly the down arrow takes you to the most recent commands. 
