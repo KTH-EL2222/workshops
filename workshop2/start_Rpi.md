@@ -51,7 +51,6 @@ To navigate up one directory you type in `cd ..`. If you want to go directly to 
 
 Let's run a python game. change directory to `python_games` and run `python <GAME>` where `<GAME>` is one of the files with an .py extenssion.
 
-
 The `sudo` (superuser do) command is used to run commands that need root privileges to run.
 
 The `apt-get` command is used to install packages from online sources, the packages we will be using in these workshops should already be installed but if any new are needed this is the command used. This is also used for updating, you can type in `sudo apt-get update` to update the system and the packages.
@@ -60,3 +59,6 @@ The `apt-get` command is used to install packages from online sources, the packa
 * The up arrow key goes through the previous commands you have entered in the shell, similarly the down arrow takes you to the most recent commands. 
 * The tab key can be very useful when working in the terminal as it will complete what you have started to type or give you options if what you have typed matches more than one command. When in the home folder, try typing `cd python_g` and then press tab! 
 *  When we are running a program, we can stop it using "ctrl+c"
+
+## Get code for workshop 2.
+To get code that is going to be used through this workshop run `git clone ...` <!-- TODO: Add link to directory --> in the home directory of your raspberry pi.
