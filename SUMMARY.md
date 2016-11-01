@@ -8,6 +8,6 @@
    * [Assignment 3: Read the encoder](assignment_3.md)
    * [Final Assignment: Build a robot](final_assignment.md)
    * [Introduction to workshop 2](introduction_to_workshop_2.md)
-* [Code](code.md)
 * Workshop 2
+* [Code](code.md)
 
