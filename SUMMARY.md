@@ -8,7 +8,7 @@
    * [Assignment 3: Read the encoder](assignment_3.md)
    * [Final Assignment: Build a robot](final_assignment.md)
    * [Introduction to workshop 2](introduction_to_workshop_2.md)
-* Workshop 2
+* [Workshop 2](workshop_2.md)
    * [Assignment 0: Getting started with Raspberry Pi](assignment_0_getting_started_with_raspberry_pi.md)
 * [Code](code.md)
 
