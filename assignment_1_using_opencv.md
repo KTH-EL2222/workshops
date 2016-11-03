@@ -8,7 +8,7 @@ In this workshop we are going to use PRi camera and OpenCV to detect a printed c
 
 
 ## Capture video stream in python
-In terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Instructions on how to use filezilla you can find [here](ssh_and_vnc.html).
+In terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Link to instructions on how to use filezilla or other file sharing tool you can find [here](ssh_and_vnc.html).
 
 
 ```python
@@ -51,11 +51,11 @@ In order to run code with OpenCV, you have to switch to a virtual environment ca
 
 Now you are ready to run your python script by typing `python collect_frames.py`. If output is `python: can't open file...` then make sure that your current directory is where you saved your python script. For further explanation of this code read Step 6 on this [web page](http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/#crayon-57f512c8e35c5004277174).
 
-From this point and on we are going to use OpenCV library to detect circles with a certain color in the stream of images captured from Raspberry pi camera.
+From this point and on we are going to use OpenCV library to detect circles with a certain color in the stream of images captured from Raspberry pi camera. Don't foget to run your code in virtual environment. 
 
 ## Some theory
 
-A colored digital image usually consists of three dimensions: width, height and color channels. An RGB image consist of three channels Red, Green and Blue. The three channels are added together to reproduce a broad array of other colors.
+A colored digital image consists of three dimensions: width, height and color channels. An RGB image consist of three channels Red, Green and Blue. The three channels are added together to reproduce a broad array of other colors.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/af/RGB_color_solid_cube.png)
 
@@ -78,14 +78,14 @@ Now lets implement a hough transform to detect round objects. For that we are go
 
 Before calling this function you should convert collected image from BGR to gray-scale. Yes BGR, OpenCV using BGR (Blue-Green-Red) as default color space due to a [historical reason](https://www.learnopencv.com/why-does-opencv-use-bgr-color-format/). To transform an image from BGR to gray-scale use following function `gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`.
 
-After detecting circles lets printing these circles in the image. To draw a circle in your image use `cv2.circle(image,(x,y),r,(B,R,G))`, where `(x,y)` is the coordinates of the circle center, `r` is a radius and `(R,G,B)` is the color of the drawn circle.
+After detecting circles lets printing these circles in the image. To draw a circle in your image use `cv2.circle(image,(x,y),r,(B,R,G))`, where `(x,y)` is the coordinates of the circle center, `r` is a radius and `(B,R,G)` is the color of the drawn circle.
 
 ### Task
-Modify your code so that you can detect and draw circles on the screen.
+Modify your code so that you can detect and draw circles on the screen. If you feel that your program processing image frames to slow, try to change dimension of the input image. Changing `dp` and `minDist` in Hough transform might also affect speed of the image processing.  
 
 ## Assignment 2: Remove false circles.
 
-To reduce number of false positive detections, lets consider color of the detected circles. For each detection we can check the color of the pixel that corresponds to the center of the circle and verify if it match with the true color of the circle you want to track.
+To reduce number of false positive detections, let's consider color of the detected circles. For each detection we can check the color of the pixel that corresponds to the center of the circle and verify if it match with the true color of the circle you want to track.
 
 Before we can start detecting color, we have to secure control over the white-balance of the camera. To gain control over the white-balance for current lightning conditions we need to switch-off auto white-balance and find a custom white-balance that is good for current lightning conditions. Point you RPi camera towards an area that should be white/gray and run the `camera_calibration.py` script.
 To download code run `wget ...` in your working directory.
