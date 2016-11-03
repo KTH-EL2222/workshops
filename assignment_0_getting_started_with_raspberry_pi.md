@@ -1,4 +1,4 @@
-# Getting Started with Rpi
+# Assignment 0: Getting Started with Rpi
 To work on Raspberry Pi you will need:
 * Raspberry Pi
 * HDMI cable
