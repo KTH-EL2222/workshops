@@ -8,7 +8,7 @@ In this workshop we are going to use PRi camera and OpenCV to detect a printed c
 
 
 ## Capture video stream in python
-In terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Instructions on how to use filezilla you can find [here]().
+In terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Instructions on how to use filezilla you can find [here](ssh_and_vnc.html).
 
 
 ```python
