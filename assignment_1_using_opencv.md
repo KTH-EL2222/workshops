@@ -1,4 +1,4 @@
-# Assignment 1: Using OpenCV
+#Using OpenCV
 
 > OpenCV:
 >
@@ -53,7 +53,7 @@ Now you are ready to run your python script by typing `python collect_frames.py`
 
 From this point and on we are going to use OpenCV library to detect circles with a certain color in the stream of images captured from Raspberry pi camera.
 
-## Some digital image theory
+## Some theory
 
 A colored digital image usually consists of three dimensions: width, height and color channels. An RGB image consist of three channels Red, Green and Blue. The three channels are added together to reproduce a broad array of other colors.
 
