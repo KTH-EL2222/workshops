@@ -11,7 +11,7 @@
 * [Workshop 2](workshop_2.md)
    * [Assignment 0: Getting started with Raspberry Pi](assignment_0_getting_started_with_raspberry_pi.md)
    * [Assignment 1-2: Using OpenCV](assignment_1_using_opencv.md)
-   * Assignment 3: Make it move
+   * [Assignment 3: Make it move](assignment_3_make_it_move.md)
 * [Code](code.md)
 * [SSH and VNC](ssh_and_vnc.md)
 
