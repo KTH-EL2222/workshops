@@ -40,9 +40,9 @@ Let's start using shell. Shell is a command line interface in Linux based operat
 
 Open terminal by clicking on the terminal logo ![](figures/terminal_logo.png) in top-left corner. You can also use bash by accessing RPi with SSH.
 
-In the opened terminal type `pwd` and press enter, this command gives you the present working directory which should be `/home/pi`.
+In the opened terminal type `pwd` and press ente. This command gives you the present working directory which should be `/home/pi`.
 
-Now we can move on to navigating the terminal, let's start by running the command `ls`, this will give us a list of contents in the working directory. If you now try the command `ls` with argument `-l` (type `ls -l` in the terminal), you will see the content listed along with some extra information such as their size and the time when it was last edited, this is done by the argument `-l`. If you also want to see the dot files in the directory which are normally hidden, append `a` to the argument by typing `ls -la`. For more information about possible options for `ls` type `ls --help`.
+Now we can move on to navigation. Let's start by running the command `ls`, this will give us a list of contents in the working directory. If you now try the command `ls` with argument `-l` (type `ls -l` in the terminal), you will see the content listed along with some extra information, such as their size and the time when it was last edited, this is done by the argument `-l`. If you also want to see the dot files in the directory which are normally hidden, append `a` to the argument by typing `ls -la`. For more information about possible options for `ls` type `ls --help`.
 
 Now that you know your working directory and its content, the next step is to navigate. To go from one directory to another we use `cd` (Change Directory). From the list printed by the `ls` command you can choose a directory to change to it. Go to the python games directory by typing `cd python_games`. Now, the shell prompt looks like this: `~/python_games$`, if you type pwd you will see the full route of the directory you are in. Notice that `~` stands for the home directory, which is `/home/pi`.
 
@@ -60,4 +60,4 @@ The `apt-get` command is used to install packages from online sources, the packa
 *  When we are running a program, we can stop it using "ctrl+c"
 
 ## Get code for workshop 2.
-To get code that is going to be used through this workshop run `git clone ...` <!-- TODO: Add link to directory --> in the home directory of your raspberry pi.
+To get code that is going to be used through this workshop run `git clone https://github.com/KTH-EL2222/ws2_code.git` in the home directory of your raspberry pi.
