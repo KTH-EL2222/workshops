@@ -10,7 +10,7 @@
    * [Introduction to workshop 2](introduction_to_workshop_2.md)
 * [Workshop 2](workshop_2.md)
    * [Assignment 0: Getting started with Raspberry Pi](assignment_0_getting_started_with_raspberry_pi.md)
-   * [Assignment 1: Using OpenCV](assignment_1_using_opencv.md)
+   * [Assignment 1-2: Using OpenCV](assignment_1_using_opencv.md)
 * [Code](code.md)
 * [SSH and VNC](ssh_and_vnc.md)
 
