@@ -10,5 +10,5 @@ Design a control loop that makes your robot follow circle that we detect with Op
 ## Final task.
 Make your robot follow a face. Checkout [this link]() to see how you can use OpenCV to detect faces.
 
-###NOTES:
+###NOTE
 If you want to run your robot with a battery ask your TA how to do that.
