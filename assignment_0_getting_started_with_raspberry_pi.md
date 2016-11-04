@@ -61,4 +61,17 @@ The `apt-get` command is used to install packages from online sources. The packa
 *  Often it is possible to output instruction for a command by append `--help` after the command.
 
 ## Get code for workshop 2.
-To get code that is going to be used through this workshop run `git clone https://github.com/KTH-EL2222/ws2_code.git` in the home directory of your raspberry pi.
+To get code that is going to be used through this workshop run `git clone https://github.com/KTH-EL2222/ws2_code.git` in the home directory of your raspberry pi. Below you can see the directory tree for that repository.
+```
+├── Arduino_code
+│   └── raspberryCom.ino
+├── README.md
+└── RPi_code
+    ├── communication
+    │   ├── arduinoCom.py
+    │   └── communication_test.py
+    └── OpenCV
+        ├── camera_calibration.py
+        ├── capture_image.py
+        └── color_detection.py
+```
