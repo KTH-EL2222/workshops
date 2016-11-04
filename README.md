@@ -4,5 +4,5 @@ The course is divided into two parts. The first workshop will introduce low-leve
 
 The goal of workshop 1 is to control motors by creating a closed loop control with encoder signal as feedback. The workshop consists of four assignments and one final task. In the assignments, you will get used to the Arduino and the hardware used in this course. For the final task, you will combine all parts and design a closed loop controller with encoder signal as feedback.
 
-
+For the Workshop 2 you are going to exploit a computer vision tool called OpenCV. The goal is to detect and follow printed circles.
 
