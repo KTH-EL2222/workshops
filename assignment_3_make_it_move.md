@@ -27,6 +27,6 @@ double angular_cmd = 0;
 bool newData = readSerialCmd(linear_cmd, angular_cmd);
 ```
 
-Test your system by sending commands to Arduino through a serial monitor. Make sure you have chosed newline  <!-- TODO: add image, check if it is called ending character -->
+Test your system by sending commands to Arduino through a serial monitor. Make sure you have chosed newline in the right bottom corner of the serial monitor.
 
 
