@@ -4,12 +4,10 @@
 >
 >(Open Source Computer Vision) is a library of programming functions mainly aimed at real-time computer vision.
 
-In this workshop we are going to use PRi camera and OpenCV to detect a printed circle. To make sure that Rpi camera is properly configured let us try to capture an image. Run `raspistill -o output.jpg` in the terminal. This command should enable RPi camera, take a snapshot and save it to `output.jpg`. Checkout your image by typing `gpicview output.jpg`. If camera works fine lets continue to acquiring image stream with python and OpenCV.
-
+In this workshop we are going to use PRi camera and OpenCV to detect a printed circle. To make sure that Rpi camera is properly configured let us try to capture an image. Run `raspistill -o output.jpg` in the terminal. This command should enable RPi camera, take a snapshot and save it to the `output.jpg`. Checkout your image by typing `gpicview output.jpg`. If camera works fine lets continue to acquiring image stream with python and OpenCV.
 
 ## Capture video stream in python
-In terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Link to instructions on how to use filezilla or other file sharing tool you can find [here](ssh_and_vnc.html).
-
+In the terminal create a directory where you can store your code and `cd` to your new directory. In your new directory create a file called `collect_frames.py` and add following code. You can either edit code directly on raspberry pi or remotely copy file from your computer to raspberry pi using filezilla. Link to instructions on how to use filezilla or other file sharing tool you can find [here](ssh_and_vnc.html).
 
 ```python
 # import the necessary packages
@@ -45,13 +43,13 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
 		break
 ```
 
-In order to run code with OpenCV, you have to switch to a virtual environment called cv. Open terminal and run following commands to change to virtual environment `source ~/.profile` and `workon cv`. Your terminal output should be similar to the image below.
+This code will be a starting point for your circle detection program. In order to run code with OpenCV, you have to switch to a virtual environment called cv. Open terminal and run following commands to change to the virtual environment `source ~/.profile` and `workon cv`. Your terminal output should be similar to the image below.
 
 ![workon cv](figures/workon_cv.png)
 
-Now you are ready to run your python script by typing `python collect_frames.py`. If output is `python: can't open file...` then make sure that your current directory is where you saved your python script. For further explanation of this code read Step 6 on this [web page](http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/#crayon-57f512c8e35c5004277174).
+Now you are ready to run your python script by typing `python collect_frames.py`. If output is `python: can't open file...` then make sure that your working directory is where you saved your python script. For further explanation of this code read Step 6 on this [web page](http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/#crayon-57f512c8e35c5004277174).
 
-From this point and on we are going to use OpenCV library to detect circles with a certain color in the stream of images captured from Raspberry pi camera. Don't foget to run your code in virtual environment. 
+From this point and on we are going to use OpenCV library to detect circles with a certain color in the stream of images captured from Raspberry pi camera. Don't forget to run your code in the virtual environment. 
 
 ## Some theory
 
@@ -69,12 +67,12 @@ Intensity of each channel is usually represented with 8-bit resolution. That mea
 |0|0|255|Blue|
 |255|255|255|White|
 
-Another popular color model that is often used in image analysis is called HSV (Hue-Saturation-Value). HSV representation is more intuitive than the RGB model. If you want to target a specific color you need to chose an relevant interval in Hue and then adjust value and saturation intervals to match the lightning condition of the environment.
+Another popular color model that is often used in image analysis is called HSV (Hue-Saturation-Value). HSV representation is more intuitive than the RGB model. If you want to target a specific color int he image you need to chose an relevant interval in Hue and then adjust value and saturation intervals to match the lightning condition of the environment.
 
 Another methodology we are going to use in this workshop is called Hough transform. Hough transform is used to find lines or circles in an image. If you want to know more about hough transform checkout [wikipedia page for hough transform](https://en.wikipedia.org/wiki/Hough_transform).
 
 ## Assignment 1: Finding circles.
-Now lets implement a hough transform to detect round objects. For that we are going to use an OpenCV function that is called [HoughCircles](http://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles). It has four compulsory parameters `image, method, dp, minDist`. According to the documentation input should be a 8-bit, gray-scaled image. Method is `cv2.cv2.HOUGH_GRADIENT`, and `dp` and `minDist` are the design parameters that are free to chose. `dp` is controlling the resolution of the hough space and `minDist` is the minimum distance between the circle centers. `dp = 1` and `minDist = 20` should work fine. Function is returning an array of the parameters for the circles that were found in the image. The circle parameters consist of the coordinates for the center of the circle, `x,y` and the radius of the circle `r`. Circles that corresponds to the highest accumulated value are returned fist. Follow [this link](http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm) if you want to know how the Hough transform works.
+Now lets implement a hough transform to detect round objects. For that we are going to use an OpenCV function, [HoughCircles](http://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles). It has four compulsory parameters `image, method, dp, minDist`. According to the documentation input should be a 8-bit, gray-scaled image. Method is `cv2.cv2.HOUGH_GRADIENT`, and `dp` and `minDist` are the design parameters that are free to chose. `dp` is controlling the resolution of the hough space and `minDist` is the minimum distance between the circle centers. `dp = 1` and `minDist = 20` should work fine. Function is returning an array of the parameters for the circles that were found in the image. The circle parameters consist of the coordinates for the center of the circle, `x,y` and the radius of the circle `r`. Circles that corresponds to the highest accumulated value are returned fist. The accumulated value is approximately proportional to the likelihood of finding an actual circle. Follow [this link](http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm) if you want to know how the Hough transform works.
 
 Before calling this function you should convert collected image from BGR to gray-scale. Yes BGR, OpenCV using BGR (Blue-Green-Red) as default color space due to a [historical reason](https://www.learnopencv.com/why-does-opencv-use-bgr-color-format/). To transform an image from BGR to gray-scale use following function `gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)`.
 
@@ -84,18 +82,20 @@ After detecting circles lets printing these circles in the image. To draw a circ
 Modify your code so that you can detect and draw circles on the screen. If you feel that your program processing image frames to slow, try to change dimension of the input image. Changing `dp` and `minDist` in Hough transform might also affect speed of the image processing.  
 
 ## Assignment 2: Remove false circles.
+To reduce number of false positive detection, let's consider color of the detected circles. For each detection we can verify that the color of the detected circle is matched with the true color of the printed circle.
 
-To reduce number of false positive detections, let's consider color of the detected circles. For each detection we can check the color of the pixel that corresponds to the center of the circle and verify if it match with the true color of the circle you want to track.
-
-Before we can start detecting color, we have to secure control over the white-balance of the camera. To gain control over the white-balance for current lightning conditions we need to switch-off auto white-balance and find a custom white-balance that is good for current lightning conditions. Point you RPi camera towards an area that should be white/gray and run the `camera_calibration.py` script.
-To download code run `wget ...` in your working directory.
-<!-- TODO: add repository -->
+Before we can start detecting color, we have to secure the control over the white-balance of the camera. That is done by finding custom white-balance that is good for current lightning conditions. Point you RPi camera towards an area that should be white/gray and run the `camera_calibration.py` script. It should be located in the directory you cloned in the end of Assignment 0.
 
 The script assume that biggest part of the scene is gray, e.i. the mean intensity of the three color channels should be equal. The script tries to find red and blue gains such that intensity over each channel is almost same. After finding red and blue gains, use code below to turn off white balance and setup your own gains.
 
- <!-- TODO: add code here turn off white-balance and setup own gains -->
+```Python
+camera.awb_mode = 'off'
+camera.awb_gains = (rg, bg)
+```
 
-To detect specific colors we filter out HSV values that not correspond to the color of interest. To find good thresholds use `color_detection.py` script. Before running the script change white-balance gains. Run the script and drag the track-bars until you are satisfied with your results. Write down values for the thresholds that are going to be used later in your code.
+Note that this have to be appended after the camera object is created. Initialize `rg` and `bg` with the calibration values.
+
+To detect specific colors we have to find HSV intervals that correspond to the color of interest. To find good thresholds use `color_detection.py` script. Before running the script change white-balance gains. Run the script and drag the track-bars until you are satisfied with the results. Write down values for the thresholds that are going to be used later in your code.
 
 ### Task
 Adjust your code so that circles that not corresponds to the color of your circle are not detected. Use function `hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)` to convert your image to HSV color space. A simple solution is to check if the HSV values of the center coordinate of the circle are satisfied by the threshold you have found for your color.
