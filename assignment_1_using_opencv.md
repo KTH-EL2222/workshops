@@ -67,7 +67,7 @@ Intensity of each channel is usually represented with 8-bit resolution. That mea
 |0|0|255|Blue|
 |255|255|255|White|
 
-Another popular color model that is often used in image analysis is called HSV (Hue-Saturation-Value). HSV representation is more intuitive than the RGB model. If you want to target a specific color int he image you need to chose an relevant interval in Hue and then adjust value and saturation intervals to match the lightning condition of the environment.
+Another popular color model that is often used in image analysis is called HSV (Hue-Saturation-Value). HSV representation is more intuitive than the RGB model. If you want to target a specific color in the image you need to chose an relevant interval in Hue and then adjust value and saturation intervals to match the lightning condition of the environment.
 
 Another methodology we are going to use in this workshop is called Hough transform. Hough transform is used to find lines or circles in an image. If you want to know more about hough transform checkout [wikipedia page for hough transform](https://en.wikipedia.org/wiki/Hough_transform).
 
