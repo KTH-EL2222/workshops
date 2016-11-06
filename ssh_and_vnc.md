@@ -12,6 +12,7 @@ NOTE: vnc server should already be configured on the raspberry pi images you get
 * [File sharing on Windows and Ubuntu](https://www.raspberrypi.org/documentation/remote-access/ssh/sftp.md)
 * [SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 [ Remote control Raspberry Pi from Windows 8.1 using VNC ](http://helloraspberrypi.blogspot.se/2013/11/remote-control-raspberry-pi-from.html)
+
 ## Mac
 * [Mac Screen and File Sharing](https://learn.adafruit.com/adafruit-raspberry-pi-lesson-7-remote-control-with-vnc/mac-screen-and-file-sharing)
 * [SSH using Linux or Mac OS](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md)
