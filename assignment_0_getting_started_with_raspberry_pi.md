@@ -56,7 +56,7 @@ The `apt-get` command is used to install packages from online sources. The packa
 
 ## Useful tips:
 * The up arrow key goes through the previous commands you have entered in the shell, similarly the down arrow takes you to the most recent commands. If you want to list previously used commands type `history`. Each command call have a number associated to it. You can use this number to call same command again, just type `!10` to recall command associated to number 10. If you want to truncate the list to last N calls put N as argument to history call, ie. write ´history N´. You can use `grep` you are looking for command with a specific string included. For example output all previously used commands with cd by typing `history | grep cd`.   
-* The tab key can be very useful when working in the terminal as it will complete what you have started to type or give you options if what you have typed matches more than one command. When in the home folder, try typing `cd python_g` and then press tab!.
+* The tab key can be very useful when working in the terminal. Pressing the tab key will complete what you have started to type. If there are more than one match it will give you options for commands. When in the home folder, try typing `cd python_g` and then press tab!.
 *  When we are running a program, we can stop it using "ctrl+c".
 *  Often it is possible to output instruction for a command by append `--help` after the command.
 
