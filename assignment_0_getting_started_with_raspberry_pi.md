@@ -14,7 +14,7 @@ Before powering up the Raspberry Pi, put it into a RPi case and attach a RPi cam
 
 User name for the RPi is "pi" and the password is "raspberry".
 
-When the RPi is on, configure the network by clicking on WIFI icon on top right corner. The local network that you should use is `EL2222` with password `dbdeadbeef`. After connecting to the network check the ip-address of the RPi by opening terminal (screen icon on the top left corner) and type `ifconfig`. The ip-address of your raspberry pi will be listed as `inet addr` under the `wlan0` interface. It should be in following format `192.168.1.xxx`. 
+When the RPi is on, configure the network by clicking on "two cables" icon on top right corner. The local network that you should use is `EL2222` with password `dbdeadbeef`. After connecting to the network check the ip-address of the RPi by opening terminal (screen icon on the top left corner) and type `ifconfig`. The ip-address of your raspberry pi will be listed as `inet addr` under the `wlan0` interface. It should be in following format `192.168.1.xxx`. 
 
 To remotely access raspberry pi from your computer you can use [SSH](https://en.wikipedia.org/wiki/Secure_Shell) or [VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing). SHH will give you access to the command line interface on the remote machine, while you can use graphical interface via VNC. For links to tutorials on how to configure remote access on your computer follow [this link](ssh_and_vnc.html).
 
