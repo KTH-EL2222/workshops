@@ -19,7 +19,7 @@ $$v = \frac{V_r+V_l}{2}$$
 $$\omega$$ and $$v$$ are angular and linear velocities, $$V_l$$ and $$V_r$$ are the velocities of the left and right wheels.
 
 ### Task
-Modify your code so that given a linear and angular velocity your robot act accordingly. Include `raspberryCom.ino` in your sketch and use it to get commands from the serial port. Make sure to stop motor if no command received for some iterations. To get new command from the RPi use following code in your main loop.
+Modify your code so that given a linear and angular velocity your robot act accordingly. Include `raspberryCom.ino` in your sketch and use it to get commands from the serial port. Use the updated code that you cloned in the Assignment 0. Make sure to stop motor if no command received for some iterations. To get new command from the RPi use following code in your main loop.
 
 ```cpp
 double linear_cmd = 0;
