@@ -10,7 +10,7 @@ To run communication script in the virtual environment you may need to install R
 Design a control loop that makes your robot follow circle that we detect with OpenCV. By knowing that radius of the circle is constant, you can approximate distance to the circle by the detected radius in the image. Furthermore, the coordinates of the circle center are related to how circle is positioned with respect to the robot.
 
 ## Final task.
-Make your robot follow a face. Checkout [this link]() to see how you can use OpenCV to detect faces.
+Make your robot follow a face. Checkout [this link](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to see how you can use OpenCV to detect faces.
 
 ###NOTE
 If you want to run your robot with a battery ask your TA how to do that.
